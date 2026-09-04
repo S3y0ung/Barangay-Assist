@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BarangayAssist Admin — Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+  body{padding:40px 16px;}
+  .single-caption{text-align:center; font-size:13px; color:var(--sub); font-weight:700; margin-bottom:18px; text-transform:uppercase; letter-spacing:.5px;}
+  .stage{max-width:1180px; margin:0 auto;}
+</style>
+</head>
+<body>
+<div class="single-caption">Admin Panel — Dashboard</div>
+<div class="stage">
+  <div class="dash-wrap">
+    <div class="sidebar">
+      <div class="sname">BarangayAssist Admin</div>
+      <div class="sitem on">📊 Dashboard</div>
+      <div class="sitem">📄 Document Requests</div>
+      <div class="sitem">📅 Appointments</div>
+      <div class="sitem">💬 Reports &amp; Concerns</div>
+      <div class="sitem">📣 Announcements</div>
+      <div class="sitem">🧑‍🤝‍🧑 Residents</div>
+      <div class="logout">⏻ Logout</div>
+    </div>
+    <div class="dash-main">
+      <div class="dash-panel active" id="p-dashboard">
+        <div class="dash-topbar"><h2>Dashboard</h2><div class="admin-chip">👤 Admin</div></div>
+          <div class="kpis">
+            <div class="kpi blue"><div class="lbl">TOTAL REQUESTS</div><div class="num">128</div><div class="sub">View all requests</div></div>
+            <div class="kpi amber"><div class="lbl">PENDING REQUESTS</div><div class="num">35</div><div class="sub">Needs action</div></div>
+            <div class="kpi green"><div class="lbl">RESOLVED REPORTS</div><div class="num">76</div><div class="sub">View all reports</div></div>
+            <div class="kpi navy"><div class="lbl">APPOINTMENTS TODAY</div><div class="num">12</div><div class="sub">View schedule</div></div>
+          </div>
+          <div class="panels">
+            <div class="panel">
+              <div class="panel-head"><b>Recent Document Requests</b><a>View all</a></div>
+              <div class="prow"><div><div class="who">Juan Dela Cruz</div><div class="what">Barangay Clearance · 9:30 AM</div></div><div class="status pending">Pending</div></div>
+              <div class="prow"><div><div class="who">Maria Santos</div><div class="what">Certificate of Residency · 10:15 AM</div></div><div class="status pending">Pending</div></div>
+              <div class="prow"><div><div class="who">Pedro Reyes</div><div class="what">Certificate of Indigency · 11:00 AM</div></div><div class="status approved">Approved</div></div>
+              <div class="prow"><div><div class="who">Ana Garcia</div><div class="what">Barangay Clearance · 2:45 PM</div></div><div class="status approved">Approved</div></div>
+            </div>
+            <div class="panel">
+              <div class="panel-head"><b>Recent Reports / Concerns</b><a>View all</a></div>
+              <div class="prow"><div><div class="who">Pothole in front of Daycare</div><div class="what">Reported 8:20 AM</div></div><div class="status progress">In Progress</div></div>
+              <div class="prow"><div><div class="who">Streetlight not working, Purok 2</div><div class="what">Reported 7:40 AM</div></div><div class="status new">New</div></div>
+              <div class="prow"><div><div class="who">Garbage not collected, Block 4</div><div class="what">Reported yesterday</div></div><div class="status resolved">Resolved</div></div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

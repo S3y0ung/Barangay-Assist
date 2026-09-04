@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BarangayAssist Admin — Residents</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+  body{padding:40px 16px;}
+  .single-caption{text-align:center; font-size:13px; color:var(--sub); font-weight:700; margin-bottom:18px; text-transform:uppercase; letter-spacing:.5px;}
+  .stage{max-width:1180px; margin:0 auto;}
+</style>
+</head>
+<body>
+<div class="single-caption">Admin Panel — Residents</div>
+<div class="stage">
+  <div class="dash-wrap">
+    <div class="sidebar">
+      <div class="sname">BarangayAssist Admin</div>
+      <div class="sitem">📊 Dashboard</div>
+      <div class="sitem">📄 Document Requests</div>
+      <div class="sitem">📅 Appointments</div>
+      <div class="sitem">💬 Reports &amp; Concerns</div>
+      <div class="sitem">📣 Announcements</div>
+      <div class="sitem on">🧑‍🤝‍🧑 Residents</div>
+      <div class="logout">⏻ Logout</div>
+    </div>
+    <div class="dash-main">
+      <div class="dash-panel active" id="p-residents">
+        <div class="dash-topbar"><h2>Residents</h2><div class="admin-chip">👤 Admin</div></div>
+          <div class="toolbar"><input class="search" placeholder="Search resident name..."><button class="addbtn">+ Add Resident</button></div>
+          <table>
+            <thead><tr><th>Name</th><th>Purok</th><th>Contact No.</th><th>Requests Made</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Juan Dela Cruz</td><td>Purok 3</td><td>0917 123 4567</td><td>4</td><td><span class="status confirmed">Verified</span></td></tr>
+              <tr><td>Maria Santos</td><td>Purok 1</td><td>0917 234 5678</td><td>2</td><td><span class="status confirmed">Verified</span></td></tr>
+              <tr><td>Pedro Reyes</td><td>Purok 2</td><td>0917 345 6789</td><td>6</td><td><span class="status pending">Pending Verification</span></td></tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

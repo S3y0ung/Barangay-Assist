@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BarangayAssist — My Reports</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+  body{padding:40px 16px;}
+  .single-caption{text-align:center; font-size:13px; color:var(--sub); font-weight:700; margin-bottom:18px; text-transform:uppercase; letter-spacing:.5px;}
+</style>
+</head>
+<body>
+<div class="single-caption">Screen — My Reports</div>
+<div class="phone-frame-wrap">
+  <div class="phone">
+    <div class="notch"></div>
+    <div class="screen active" id="s-reports">
+          <div class="ph-header simple"><div class="back-btn">←</div><div style="font-weight:700; font-size:15px;">My Reports &amp; Requests</div></div>
+          <div class="rep-tabbar">
+            <div class="rep-tabchip on">All</div>
+            <div class="rep-tabchip">Requests</div>
+            <div class="rep-tabchip">Concerns</div>
+          </div>
+          <div class="rep-list">
+            <div class="rep-card">
+              <img src="https://images.unsplash.com/photo-1584824486516-0555a07fa415?w=100&h=100&fit=crop">
+              <div class="body"><b>Barangay Clearance</b><small>Submitted May 20 · </small><span class="status pending" style="margin-left:4px;">Pending</span></div>
+            </div>
+            <div class="rep-card">
+              <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?w=100&h=100&fit=crop">
+              <div class="body"><b>Pothole in front of Daycare</b><small>Reported May 19 · </small><span class="status progress" style="margin-left:4px;">In Progress</span></div>
+            </div>
+            <div class="rep-card">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=100&h=100&fit=crop">
+              <div class="body"><b>Certificate of Residency</b><small>Submitted May 15 · </small><span class="status approved" style="margin-left:4px;">Approved</span></div>
+            </div>
+            <div class="rep-card">
+              <img src="https://images.unsplash.com/photo-1573165231977-3f0e27806045?w=100&h=100&fit=crop">
+              <div class="body"><b>Streetlight not working, Purok 2</b><small>Reported May 10 · </small><span class="status resolved" style="margin-left:4px;">Resolved</span></div>
+            </div>
+          </div>
+          <button class="fab">+ New Request or Report</button>
+        </div>
+    <div class="navbar" id="res-navbar">
+      <div class="nitem "><span class="nic">🏠</span>Home</div>
+      <div class="nitem "><span class="nic">📄</span>Requests</div>
+      <div class="nitem on"><span class="nic">📊</span>Reports</div>
+      <div class="nitem "><span class="nic">👤</span>Profile</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

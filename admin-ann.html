@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BarangayAssist Admin — Announcements</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+  body{padding:40px 16px;}
+  .single-caption{text-align:center; font-size:13px; color:var(--sub); font-weight:700; margin-bottom:18px; text-transform:uppercase; letter-spacing:.5px;}
+  .stage{max-width:1180px; margin:0 auto;}
+</style>
+</head>
+<body>
+<div class="single-caption">Admin Panel — Announcements</div>
+<div class="stage">
+  <div class="dash-wrap">
+    <div class="sidebar">
+      <div class="sname">BarangayAssist Admin</div>
+      <div class="sitem">📊 Dashboard</div>
+      <div class="sitem">📄 Document Requests</div>
+      <div class="sitem">📅 Appointments</div>
+      <div class="sitem">💬 Reports &amp; Concerns</div>
+      <div class="sitem on">📣 Announcements</div>
+      <div class="sitem">🧑‍🤝‍🧑 Residents</div>
+      <div class="logout">⏻ Logout</div>
+    </div>
+    <div class="dash-main">
+      <div class="dash-panel active" id="p-ann">
+        <div class="dash-topbar"><h2>Announcements</h2><div class="admin-chip">👤 Admin</div></div>
+          <div class="toolbar"><input class="search" placeholder="Search announcements..."><button class="addbtn">+ New Announcement</button></div>
+          <div class="panels" style="grid-template-columns:1fr;">
+            <div class="panel">
+              <div class="prow"><div><div class="who">Barangay Clean-Up Drive</div><div class="what">Posted May 18 · Visible to all residents</div></div><span class="status confirmed">Published</span></div>
+              <div class="prow"><div><div class="who">Schedule of Flag Raising</div><div class="what">Posted May 10 · Recurring, every Monday</div></div><span class="status confirmed">Published</span></div>
+              <div class="prow"><div><div class="who">COVID-19 Vaccination Drive</div><div class="what">Draft · not yet published</div></div><span class="status pending">Draft</span></div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

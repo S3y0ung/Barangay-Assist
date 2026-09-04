@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BarangayAssist Admin — Appointments</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+  body{padding:40px 16px;}
+  .single-caption{text-align:center; font-size:13px; color:var(--sub); font-weight:700; margin-bottom:18px; text-transform:uppercase; letter-spacing:.5px;}
+  .stage{max-width:1180px; margin:0 auto;}
+</style>
+</head>
+<body>
+<div class="single-caption">Admin Panel — Appointments</div>
+<div class="stage">
+  <div class="dash-wrap">
+    <div class="sidebar">
+      <div class="sname">BarangayAssist Admin</div>
+      <div class="sitem">📊 Dashboard</div>
+      <div class="sitem">📄 Document Requests</div>
+      <div class="sitem on">📅 Appointments</div>
+      <div class="sitem">💬 Reports &amp; Concerns</div>
+      <div class="sitem">📣 Announcements</div>
+      <div class="sitem">🧑‍🤝‍🧑 Residents</div>
+      <div class="logout">⏻ Logout</div>
+    </div>
+    <div class="dash-main">
+      <div class="dash-panel active" id="p-appts">
+        <div class="dash-topbar"><h2>Appointments</h2><div class="admin-chip">👤 Admin</div></div>
+          <div class="toolbar"><input class="search" placeholder="Search resident or service..."><button class="addbtn">+ Add Appointment</button></div>
+          <table>
+            <thead><tr><th>Resident</th><th>Service</th><th>Date</th><th>Time</th><th>Status</th><th>Action</th></tr></thead>
+            <tbody>
+              <tr><td>Juan Dela Cruz</td><td>Barangay Clearance Pickup</td><td>May 21, 2024</td><td>09:00 AM</td><td><span class="status confirmed">Confirmed</span></td><td class="row-actions"><button class="mini-btn view">View</button></td></tr>
+              <tr><td>Maria Santos</td><td>Certificate of Residency</td><td>May 21, 2024</td><td>10:00 AM</td><td><span class="status confirmed">Confirmed</span></td><td class="row-actions"><button class="mini-btn view">View</button></td></tr>
+              <tr><td>Pedro Reyes</td><td>Business Permit Endorsement</td><td>May 21, 2024</td><td>02:00 PM</td><td><span class="status pending">Pending</span></td><td class="row-actions"><button class="mini-btn approve">Confirm</button><button class="mini-btn view">View</button></td></tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

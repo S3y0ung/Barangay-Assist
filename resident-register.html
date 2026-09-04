@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BarangayAssist — Register</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+<style>
+  body{padding:40px 16px;}
+  .single-caption{text-align:center; font-size:13px; color:var(--sub); font-weight:700; margin-bottom:18px; text-transform:uppercase; letter-spacing:.5px;}
+  .reg-scroll{height:100%; overflow-y:auto; background:#F6F9FE;}
+  .reg-header{background:var(--navy); padding:26px 22px 22px; border-radius:0 0 22px 22px; text-align:center;}
+  .reg-header .login-logo{width:52px;height:52px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;margin:0 auto 10px;}
+  .reg-header .login-title{color:#fff; font-weight:700; font-size:16px;}
+  .reg-header .login-sub{color:#CFE0F7; font-size:11.5px; margin-top:2px;}
+  .reg-body{padding:18px 20px 26px;}
+  .reg-body .field label{font-size:11.5px; font-weight:700; color:var(--sub); display:block; margin-bottom:5px;}
+  .reg-body .field input, .reg-body .field select{width:100%; border:1px solid var(--line); border-radius:9px; padding:10px 12px; font-size:13px; font-family:'Inter'; background:#fff;}
+  .reg-body .field{margin-bottom:12px;}
+  .reg-row{display:flex; gap:10px;}
+  .reg-row .field{flex:1;}
+  .login-btn{width:100%; background:var(--navy); color:#fff; border:none; padding:12px; border-radius:10px; font-weight:700; font-size:13.5px; cursor:pointer; margin-top:6px;}
+  .login-alt{text-align:center; font-size:11.5px; color:var(--sub); margin-top:14px;}
+  .login-alt a{color:var(--navy); font-weight:700; text-decoration:none;}
+  .section-lbl{font-size:11px; font-weight:700; color:var(--sub); text-transform:uppercase; letter-spacing:.4px; margin:14px 0 8px;}
+</style>
+</head>
+<body>
+<div class="single-caption">Screen — Register</div>
+<div class="phone-frame-wrap">
+  <div class="phone">
+    <div class="notch"></div>
+    <div class="screen active" id="s-register">
+      <div class="reg-scroll">
+        <div class="reg-header">
+          <div class="login-logo">🏠</div>
+          <div class="login-title">Create Your Account</div>
+          <div class="login-sub">Register to access BarangayAssist</div>
+        </div>
+        <div class="reg-body">
+          <div class="section-lbl">Personal Information</div>
+          <div class="reg-row">
+            <div class="field"><label>First Name</label><input type="text" placeholder="Juan"></div>
+            <div class="field"><label>Last Name</label><input type="text" placeholder="Dela Cruz"></div>
+          </div>
+          <div class="field"><label>Mobile Number</label><input type="text" placeholder="09XX XXX XXXX"></div>
+          <div class="field"><label>Email Address</label><input type="text" placeholder="juan.delacruz@email.com"></div>
+
+          <div class="section-lbl">Barangay Details</div>
+          <div class="field"><label>Barangay</label><select><option>Brgy. San Isidro, City of Sampaguita</option></select></div>
+          <div class="field"><label>Purok / Street</label><input type="text" placeholder="Purok 3"></div>
+
+          <div class="section-lbl">Account Security</div>
+          <div class="field"><label>Password</label><input type="password" placeholder="••••••••"></div>
+          <div class="field"><label>Confirm Password</label><input type="password" placeholder="••••••••"></div>
+
+          <button class="login-btn">Create Account</button>
+          <div class="login-alt">Already have an account? <a href="resident-login.html">Log In</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
